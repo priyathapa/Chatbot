@@ -36,7 +36,7 @@ PyYAML
     
 # File Description
 
-- *manage.py: Django’s command-line utility used to run administrative tasks such as starting the server.
+- manage.py: Django’s command-line utility used to run administrative tasks such as starting the server.
 
 - client.py:  Terminal-based client that allows the user to chat with the chatbot.
 
