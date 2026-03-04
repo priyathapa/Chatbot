@@ -18,3 +18,40 @@ SpaCy
 Requests
 
 PyYAML
+
+# Project Structure
+Chatbot/
+│
+├── manage.py
+├── client.py
+├── requirements.txt
+│
+├── chat/
+│   ├── views.py
+│   ├── urls.py
+│
+└── chatbot_project/
+    ├── settings.py
+    ├── urls.py
+    
+# File Description
+
+manage.py
+Django’s command-line utility used to run administrative tasks such as starting the server.
+
+client.py
+Terminal-based client that allows the user to chat with the chatbot.
+
+views.py
+Contains the chatbot logic using the ChatterBot library.
+
+urls.py
+Defines URL routes that connect the API endpoint to the chatbot view.
+
+requirements.txt
+Manifest file listing all Python dependencies required to run the project.
+
+# Installation Instructions
+1. Clone the repository
+   git clone https://github.com/priyathapa/Chatbot.git
+  cd Chatbot
