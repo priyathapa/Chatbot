@@ -6,6 +6,9 @@ import sys
 
 def main():
     """Run administrative tasks."""
+
+    # Set the default settings module for the Django project
+    # This tells Django which configuration file to use.
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chatbot_project.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -15,6 +18,9 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+
+    # Execute the management command passed in the terminal
+    # Example: python manage.py runserver
     execute_from_command_line(sys.argv)
 
 
