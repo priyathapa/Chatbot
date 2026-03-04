@@ -20,17 +20,17 @@ Requests
 PyYAML
 
 # Project Structure
-Chatbot/
-    manage.py
-    client.py
+    Chatbot/
+        manage.py
+        client.py
 
-    Chat/
-        views.py
-        urls.py
+        Chat/
+            views.py
+            urls.py
 
-    Chatbot_project
-        settings.py
-        urls.py
+        Chatbot_project
+            settings.py
+            urls.py
 
     
 # File Description
@@ -49,5 +49,7 @@ Chatbot/
 
 # Installation Instructions
 1. Clone the repository
-       git clone https://github.com/priyathapa/Chatbot.git
-       cd Chatbot
+       `git clone https://github.com/priyathapa/Chatbot.git
+       cd Chatbot`
+   
+3. Create a virtual environment
