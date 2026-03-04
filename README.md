@@ -23,6 +23,7 @@ PyYAML
     Chatbot/
         manage.py
         client.py
+        requirements.txt
 
         Chat/
             views.py
@@ -47,9 +48,32 @@ PyYAML
 - urls.py
     Defines URL routes that connect the API endpoint to the chatbot view.
 
+- requirements.txt
+    Manifest file listing all Python dependencies required to run the project.
+
 # Installation Instructions
 1. Clone the repository
        `git clone https://github.com/priyathapa/Chatbot.git
        cd Chatbot`
    
-3. Create a virtual environment
+2. Create a virtual environment
+       `python -m venv venv`
+
+   windows
+       `venv\Scripts\activate`
+
+   linux
+       `source venv/bin/activate`
+
+3. Install Dependencies
+       `pip install -r requirements.txt`
+
+4. Install the SpaCy language model
+        `python -m spacy download en_core_web_sm`
+
+# Running the application
+Step 1: Start the Django server
+    `python manage.py runserver`
+
+Step 2: Run the terminal chatbot client
+    `python client.py`
